@@ -16,6 +16,7 @@ BuildRequires: perl(POSIX)
 BuildRequires: perl(Term::ReadKey)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Capture::Tiny)
+BuildRequires: perl-devel
 
 BuildArch: noarch
 
