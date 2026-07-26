@@ -1,15 +1,13 @@
 %define upstream_name    IO-Prompt-Tiny
-%define upstream_version 0.002
-
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    1
+Version:    0.002
+Release:    2
 
 Summary:    Prompt for user input with a default option
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/IO/%{upstream_name}-%{upstream_version}.tar.gz
+Url:        https://metacpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/IO/%{upstream_name}-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(IO::Handle)
@@ -32,7 +30,7 @@ wild, crazy, cool stuff that other prompting modules do. It just prompts
 with a default. That's it!
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
